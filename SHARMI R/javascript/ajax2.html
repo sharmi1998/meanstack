@@ -1,0 +1,31 @@
+<html>
+<head>
+<script type="application/javascript">
+function loadJSON() {
+    var data_file="http://www.tutorialspoint.com/json/data.json";
+    var http_request=new XMLHttpRequest();
+    http_request.onreadystatechange=function(){
+if (http_request.readyState==4){
+    var jsonObj=JSON.parse(http_request.responseText);
+    document.getElementById("name").innerHTML=jsonObj.name;
+    document.getElementById("country").innerHTML=jsonObj.country;
+}
+    }
+    http_request.open("GET",data_file,true);
+    http_request.send();
+}
+</script>
+<title>try json</title>
+</head>
+<body>
+<h1>cricketer details</h1>
+<table class="src">
+<tr><th>name</th><th>country</th></tr>
+<tr><td><div id="name">sachin</div></td>
+<td><div id="country">india</div></td></tr>
+</table>
+<div calss="central">
+<button type="button" onclick="loadJSON()">UPDATE DETAILS</button>
+</div>
+</body>
+</html>

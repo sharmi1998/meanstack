@@ -1,0 +1,3 @@
+ajax is not a programming language
+ajax stands for asynchronous html and xml
+updating web pages without referrshing the page

@@ -1,0 +1,49 @@
+body{
+    font:bold,16px,arial,helivetica,sans-serifs;
+    margin: 20px;
+    padding: 10px;
+    background-color: aquamarine;
+}
+.container{width: 80%;
+margin: auto;
+overflow:hidden;
+}
+.highlight{font: bold;
+color:red}
+ul{margin: 0px;
+padding:0px;
+}
+header{background-color: paleturquoise;
+padding-top: 10px;
+min-height: 50px;
+}
+header a{
+    padding: 14px 16px;
+    color: blue;   
+    text-decoration: none;
+    font-size: 15px;
+}
+.current{margin-left:930px;
+    padding-top:0px;
+    font-size:12px; 
+}
+.qwe{
+    background-image: url("/home/ubuntu/Desktop/SHARMI R/img/cropped-sandwich.jpg");
+    width:1500px;
+    height:400px;
+    text-align:center;
+    color:white;
+    font-size:20px;
+}
+.asd{
+background-color: aquamarine;}
+.column{
+    float:left;
+    width:33.33%;
+    padding:15px;
+}
+.row:after{
+    content:"";
+    display:table;
+    clear:both;
+}

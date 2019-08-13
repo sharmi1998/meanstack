@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>ictak</title>
+        <style>
+            body{background-color: pink;
+            text-align: center;
+            font-size:30px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>welcome</h1>
+        <p>welcome  to home</p>
+        <input type="text" id="mytext" value=""/>
+        <br><br>
+        <input type="submit" value="click me" onclick="myFunction()"/>
+<p id="demo"></p>
+<script>
+function myFunction(){
+    var x=document.getElementById("mytext").value;
+    document.getElementById("demo").innerHTML=x;
+    if (x ==""){
+        alert("name must be filled out");
+    return false;   
+    }    
+}
+</script>
+    </body>
+</html>
