@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%= title %></title>
+</head>
+<body style="background-color:palegreen">
+        <nav class="navbar navbar-expand-sm bg-light navbar-light">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="/">HOME</a>
+                  </li>
+                  <ul class="navbar-nav">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="/home">ABOUT</a>
+                        </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contact">CONTACT</a>
+                  </li>
+                </ul>
+              </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col col-12 col-sm-6 col-md-4">
+                <table class="table">
+                    <thead class="thead-dark"><tr><th>STUDENT NAME</th></tr></thead>
+                    <% for(var i=0;i<name.length;i++){ %>
+                    <tr><td><%=name[i]%></td></tr>        
+                    
+                       <% }%>
+                </table>
+            </div>
+                <div class="col col-12 col-sm-6 col-md-4">
+                    <table class="table">
+                        <tr><td>NAME</td><td><input type="text" class="form-control"></td></tr>
+                        <tr><td>ROLL NO</td><td><input type="text" class="form-control"></td></tr>
+                        <tr><td>ADMNO</td><td><input type="text" class="form-control"></td></tr>
+                        <tr><td>COLLEGE</td><td><input type="text" class="form-control"></td></tr>
+                        <tr><td></td><td><button class="btn btn-warning">SUBMIT</button></td></tr>
+
+                    </table>
+                </div>
+                <div class="col col-12 col-sm-6 col-md-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, aperiam dolore maxime excepturi dolorem sit, fuga quos nobis eum sed repudiandae itaque quidem, perferendis nesciunt rerum esse voluptate! Quos, voluptas.</div>
+        </div>
+    </div>
+    <!-- <h1>ict academy</h1>
+    <h2>koratty</h2>
+    <ul>
+    <% for(var i=0;i<name.length;i++){ %>
+        <li><%=name[i]%></li>
+
+   <% }%>
+    </ul> -->
+</body>
+</html>
